@@ -1,8 +1,4 @@
-<?php
-$nome=$_GET['name'];
-$cognome=$_GET['lname'];
 
-?>
 
 
 <!DOCTYPE html>
@@ -16,7 +12,7 @@ $cognome=$_GET['lname'];
 <body>
     
 <div>
-    <form action="http://localhost:8888/PHP/esercitazione_2()php-snacks-b1)/php-snacks-b1/blocco_2/snack2.php" method="get">
+    <form action="http://localhost:8888/PHP/esercitazione_2()php-snacks-b1)/php-snacks-b1/blocco_2/snack2a.php" method="get">
 
     <input type="text" placeholder="Nome" name="name" >
     <br>
@@ -27,11 +23,6 @@ $cognome=$_GET['lname'];
 </div>
 
 
-<div>
-    <p>Il tuo nome è: <?=$nome; ?></p>
-    <p>Il tuo cognome è: <?=$cognome; ?></p>
-
-</div>
 
 </form>
 
