@@ -44,28 +44,31 @@ $sub_string= explode('.', $string);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snack 5</title>
 </head>
+
 <body>
-    
 
-<?php  for ($i=0; $i < count($sub_string); $i++) { ?>
-  <ul>
-      <li><?=  $sub_string[$i];   ?> </li>
-  </ul>
+    <ul>
+        <?php  for ($i=0; $i < count($sub_string); $i++) { ?>
+
+        <li><?=  $sub_string[$i];   ?> </li>
 
 
-<?php 
-}  
-?>
 
+        <?php 
+          }  
+          ?>
+
+    </ul>
 
 
 
 </body>
-</html>
 
+</html>
