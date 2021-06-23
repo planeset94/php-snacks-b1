@@ -47,13 +47,40 @@ $posts = [
     ],
 ];
 
-for ($i=0; $i < count($posts); $i++) { 
-    
+$keys=array_keys($posts);
+//Questo metodo traduce gli elementi di una matrice, aventi una o più sub-array in numeri. 
+// var_dump($keys);
+for ($i=0; $i <count($keys) ; $i++) { 
+ $key= $keys[$i];
+// var_dump($key);
+
+    for ($j=0; $j <count($posts[$key]); $j++) { 
+        $title=$posts[$key][$j]['title'];
+        $author=$posts[$key][$j]['author'];
+        $text=$posts[$key][$j]['text'];  ?>    
 
 
 
+   <h2>Titolo: <?= $title;?> </h2>
+   <h2>Autore: <?= $author;?> </h2>
+   <h2>Testo: <?= $text;?> </h2>
 
+
+
+<?php
+    }
 };
+
+?>
+
+
+
+
+
+
+
+
+
 
 
 
