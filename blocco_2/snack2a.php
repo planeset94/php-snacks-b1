@@ -1,6 +1,19 @@
 <?php
 $nome=$_GET['name'];
-$cognome=$_GET['lname'];
+$invitati=[
+    'luca',
+    'andrea',
+    'francesca',
+    'carla'
+];
+
+
+if(in_array($nome, $invitati)){
+    $result= $nome .": sei  nella lista!";
+
+}else{
+    $result = "Non sei in lista";
+}
 
 ?>
 
@@ -14,10 +27,13 @@ $cognome=$_GET['lname'];
 </head>
 <body>
     
-<div>
-    <p>Il tuo nome è: <?=$nome; ?></p>
-    <p>Il tuo cognome è: <?=$cognome; ?></p>
+ 
+<h1>
+<?=$result ?>
 
-</div>
+</h1>
+
+
+
 </body>
 </html>
