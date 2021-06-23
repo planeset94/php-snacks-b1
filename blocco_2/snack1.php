@@ -62,7 +62,7 @@ $percorso_immagine= $new_ads[rand(0, count($new_ads))]['image_path'];
 <body>
     
 <div>
-<img src="<?= $percorso_immagine ?>" >
+<img src="<?= $percorso_immagine; ?>" >
 </div>
 
 
