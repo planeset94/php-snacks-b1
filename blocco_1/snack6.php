@@ -32,6 +32,7 @@ Stampiamo il nostro array mettendo gli insegnanti in un rettangolo grigio e i PM
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,22 +40,23 @@ Stampiamo il nostro array mettendo gli insegnanti in un rettangolo grigio e i PM
     <title>Snack 6</title>
 </head>
 <style>
-.grey{
-    background-color:grey;
+.grey {
+    background-color: grey;
+    width: 50%;
 }
 
-.green{
-    background-color:green;
+.green {
+    background-color: green;
+    width: 50%;
 }
-
-
 </style>
+
 <body>
 
-<?php
+    <?php
 
 $roles = array_keys($db);
-var_dump($roles);
+// var_dump($roles);
     for ($i=0; $i < count($roles); $i++) { 
     $role=$roles[$i];    
     // var_dump($role);
@@ -64,9 +66,21 @@ var_dump($roles);
 
         <?php
 
-        for ($j=0; $j < ; $j++) { 
-            # code...
-        }
+        for ($j=0; $j <count($db[$role]); $j++) { 
+            $name=$db[$role][$j]['name'];
+            $lname= $db[$role][$j]['']; ?>
+
+        <p> <?=$name; ?></p>
+        <p> <?=$lname; ?></p>
+
+
+
+
+
+        <?php 
+
+
+        };
 
 
         ?>
@@ -101,5 +115,6 @@ var_dump($roles);
 
 
 
-    </body>
-    </html>
+</body>
+
+</html>
